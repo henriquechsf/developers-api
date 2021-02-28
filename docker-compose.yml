@@ -1,0 +1,23 @@
+version: '3.4'
+services:
+
+  app:
+    image: henriquechsf/gazin-developers
+    restart: always
+    build: ./developers
+    working_dir: /developers
+    environment:
+      TZ: America/Sao_Paulo
+      SPRING_BOOT_ENVIRONMENT: Production
+    volumes:
+      - ./developers:/developers
+      - ~/.m2:/root/.m2
+    ports:
+      - "8080:8080"
+    command: mvn clean spring-boot:run
+    networks:
+      - docker-network
+
+networks:
+  docker-network:
+    driver: bridge
