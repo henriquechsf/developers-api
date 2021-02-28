@@ -26,6 +26,9 @@ docker-compose up --build
 
 ---
 
+## Entrypoint
+`http://localhost:8080`
+
 ## Endpoints
 
 #### Listar todos desenvolvedores 
@@ -35,7 +38,7 @@ Resposta Sucesso: `Code 200 OK`
 ---
 
 #### Listar desenvolvedores por paginação 
-**GET** `/developers/page?limit=10&page=1` 
+**GET** `/developers/page?limit=10&page=0` 
 Resposta Sucesso: `Code 200 OK`
 
 ---
