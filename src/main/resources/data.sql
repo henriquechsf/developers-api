@@ -1,0 +1,2 @@
+INSERT INTO desenvolvedor (nome, idade, sexo, nascimento, hobby) VALUES ('Jon Doe', 21, 'M', '2000-01-01', 'Futebol');
+INSERT INTO desenvolvedor (nome, idade, sexo, nascimento, hobby) VALUES ('Carlos Henrique', 36, 'M', '1984-09-08', 'Futebol, Tenis');
